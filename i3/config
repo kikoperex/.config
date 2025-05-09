@@ -189,14 +189,14 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 	i3bar_command i3bar --transparency
-	font pango: JetBrainsMono 10
+	font pango: JetBrainsMono 9
 
 }
 
 
 # Take a screenshot, working dependencies are maim, xclip, xdotools and copyq
-bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Imágnees/Capturas de pantalla/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
-bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Imágnes/Capturas de pantalla/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
+bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Imágenes/Capturas de pantalla/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
+bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Imágenes/Capturas de pantalla/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
 bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/Imágenes/Capturas de pantalla/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
 
 # Clipboard screenshots
@@ -216,3 +216,4 @@ exec_always picom
 #Lock screen
 bindsym $mod+i exec i3lock
 
+for_window [class=".*"] border none
