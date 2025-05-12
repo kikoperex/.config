@@ -211,7 +211,7 @@ bindsym $mod+z exec flatpak run app.zen_browser.zen
 exec_always feh --bg-fill /home/kiko/Descargas/cat_leavesCATPUCCIN.png
 
 # Transparency with picom compositor
-exec_always picom
+exec_always picom --experimental-backends
 
 #Lock screen
 bindsym $mod+i exec i3lock
