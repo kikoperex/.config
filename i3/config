@@ -213,6 +213,9 @@ exec_always feh --bg-fill /home/kiko/Descargas/cat_leavesCATPUCCIN.png
 # Transparency with picom compositor
 exec_always picom --experimental-backends
 
+# Autotiling
+exec_always picom autotiling
+
 #Lock screen
 bindsym $mod+i exec i3lock
 
